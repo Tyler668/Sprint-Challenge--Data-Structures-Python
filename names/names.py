@@ -14,17 +14,21 @@ f.close()
 duplicates = []  # Return the list of duplicates in this data structure
 # Replace the nested for loops below with your improvements
 
+# Original complexity: O(N^2), if lists are same length or O(CN) for variable input array, fixed comparison array 
 
-# name1 = BSTNode(names_1[0])
-# for name in names_1:
-#     name1.insert(name) 
+name1 = BSTNode(names_1[0])
+for name in names_1:
+    name1.insert(name) 
 
-# for name in names_2:
-#     if name1.contains(name):
-#         duplicates.append(name)
+for name in names_2:
+    if name1.contains(name):
+        duplicates.append(name)
+
+# Using binary search trees: O(logN) complexity
 
 
-duplicates = list(set(names_1).intersection(names_2))
+# Sub O(logN) complexity? I don't even know
+# duplicates = list(set(names_1).intersection(names_2))
 
 
 
