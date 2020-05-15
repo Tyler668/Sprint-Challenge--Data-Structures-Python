@@ -24,7 +24,7 @@ for name in names_2:
     if name1.contains(name):
         duplicates.append(name)
 
-# Using binary search trees: O(logN) complexity
+# Using binary search trees: O(n log n) complexity
 
 
 # Sub O(logN) complexity? I don't even know
